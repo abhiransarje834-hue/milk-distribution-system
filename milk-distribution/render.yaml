@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: milk-distribution-backend
+    env: docker
+    dockerfilePath: backend/Dockerfile
+    branch: main
+    plan: free
+    autoDeploy: true
+    buildCommand: mvn -f backend/pom.xml -DskipTests package
+    startCommand: java -jar backend/target/*.jar
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+
+staticSites:
+  - name: milk-distribution-frontend
+    branch: main
+    buildCommand: cd frontend && npm install && npm run build
+    publishPath: frontend/dist
+    plan: free
+    autoDeploy: true

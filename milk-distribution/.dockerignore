@@ -1,0 +1,12 @@
+target
+.m2
+node_modules
+frontend/dist
+.git
+.idea
+*.log
+.DS_Store
+**/target
+**/.classpath
+**/.project
+**/.settings
