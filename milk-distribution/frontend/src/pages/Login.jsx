@@ -71,9 +71,7 @@ export default function Login() {
             </button>
           </form>
 
-          <div style={{ marginTop: 20, padding: 12, background: 'var(--surface2)', borderRadius: 8, fontSize: 12 }}>
-            <strong>Demo:</strong> admin / admin123
-          </div>
+          {/* Demo credentials removed for production */}
         </div>
       </div>
     </div>
