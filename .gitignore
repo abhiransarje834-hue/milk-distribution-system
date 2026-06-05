@@ -1,0 +1,24 @@
+# Node dependencies
+milk-distribution/frontend/node_modules/
+
+# Vite build output
+milk-distribution/frontend/dist/
+
+# Maven build output
+milk-distribution/backend/target/
+
+# Environment files
+milk-distribution/.env
+milk-distribution/backend/.env
+milk-distribution/frontend/.env
+
+# Logs
+*.log
+
+# IDE files
+.idea/
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
